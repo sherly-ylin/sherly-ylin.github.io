@@ -1,0 +1,39 @@
+main{
+    height: 100%;
+}
+.navigation{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    float: right;
+    margin: 1em;
+}
+.button{
+    margin: 0.5em;
+}
+.content{
+    height: max-content;
+    justify-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    width: max-content;
+    height: max-content;    
+    position: fixed;
+    justify-self: center;
+    bottom: 0.5em;
+    color: #706b6b;
+    font-family: "Kanit", sans-serif;
+    font-size: 10em;
+    font-weight: 600;
+    font-style: normal;
+    overflow-wrap: normal;
+}
+
+
+.button{
+    margin: 1em;
+}

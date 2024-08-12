@@ -1,0 +1,164 @@
+
+@use '@angular/material' as mat;
+@use 'sass:map';
+
+@include mat.core();
+
+html, body{
+    height: 100%;
+}
+body{
+    margin: 0;
+    // font-family: ;
+}
+
+$neutral-palette:(
+    0: #000000,
+    10: #1C1B1C,
+    20: #313030,
+    25: #3C3B3B,
+    30: #484646,
+    35: #545252,
+    40: #605E5E,
+    50: #797676,
+    60: #939090,
+    70: #ADAAAA,
+    80: #C9C6C5,
+    90: #E5E1E1,
+    95: #F4F0EF,
+    98: #FDF8F8,
+    99: #FFFBFF,
+    100: #FFFFFF,
+);
+
+
+$_palettes: (
+  primary: (
+    0: #000000,
+    10: #22005d,
+    20: #381e72,
+    25: #432b7e,
+    30: #4f378a,
+    35: #5b4397,
+    40: #6750a4,
+    50: #8069bf,
+    60: #9a83db,
+    70: #b69df8,
+    80: #cfbcff,
+    90: #e9ddff,
+    95: #f6eeff,
+    98: #fdf7ff,
+    99: #fffbff,
+    100: #ffffff,
+  ),
+  secondary: (
+    0: #000000,
+    10: #1E192B,
+    20: #332D41,
+    25: #3E384D,
+    30: #4A4459,
+    35: #564F65,
+    40: #625B71,
+    50: #7B738B,
+    60: #958DA5,
+    70: #B0A7C0,
+    80: #CCC2DC,
+    90: #E8DEF9,
+    95: #F6EEFF,
+    98: #FDF7FF,
+    99: #FFFBFF,
+    100: #ffffff,
+  ),
+  tertiary: (
+    0: #000000,
+    10: #31101D,
+    20: #4A2532,
+    25: #56303D,
+    30: #633B48,
+    35: #704654,
+    40: #7E5260,
+    50: #996A78,
+    60: #B58392,
+    70: #D29DAC,
+    80: #EFB8C8,
+    90: #FFD9E3,
+    95: #FFECF0,
+    98: #FFF8F8,
+    99: #FFFBFF,
+    100: #ffffff,
+  ),
+  neutral: (
+    0: #000000,
+    10: #1C1B1C,
+    20: #313030,
+    25: #3C3B3B,
+    30: #484646,
+    35: #545252,
+    40: #605E5E,
+    50: #797676,
+    60: #939090,
+    70: #ADAAAA,
+    80: #C9C6C5,
+    90: #E5E1E1,
+    95: #F4F0EF,
+    98: #FDF8F8,
+    99: #FEF7FF, // surface
+    100: #FFFFFF
+  ),
+  error: (
+    0: #000000,
+    10: #410002,
+    20: #690005,
+    25: #7e0007,
+    30: #93000a,
+    35: #a80710,
+    40: #ba1a1a,
+    50: #de3730,
+    60: #ff5449,
+    70: #ff897d,
+    80: #ffb4ab,
+    90: #ffdad6,
+    95: #ffedea,
+    98: #fff8f7,
+    99: #fffbff,
+    100: #ffffff,
+  )
+);
+
+
+$app-primary: mat.define-palette(mat.$brown-palette);
+$app-accent: mat.define-palette(mat.$indigo-palette, A200, A100, A400);
+$app-warn: mat.define-palette(mat.$red-palette);
+
+$light-theme: mat.define-light-theme((
+  color: (
+    primary: $app-primary,
+    accent: $app-accent,
+    warn: $app-warn,
+  )
+));
+
+
+$dark-theme: mat.define-dark-theme((
+  color:(
+    primary: $app-primary,
+    accent: $app-accent,
+    warn: $app-warn,
+  )
+));
+
+
+// $light-theme: mat.define-theme((
+//   color: (
+//     theme-type: light,
+//     primary: $_primary,
+//     tertiary: $_tertiary
+//   )
+// ));
+// $dark-theme: mat.define-theme((
+//   color: (
+//     theme-type: dark,
+//     primary: mat.$brown-palette,
+//     tertiary: $_tertiary
+//   )
+// ));

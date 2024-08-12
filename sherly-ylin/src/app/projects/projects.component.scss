@@ -1,0 +1,27 @@
+.container{
+    height: 100%;
+    background-color: #716969;
+    display: flex;
+    flex-direction: column;
+    // justify-items: center;
+    align-items: center;
+}
+
+mat-card {
+    background-color: #b8adaf;
+    color: #3d2c2e;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    min-width: 640px;
+    height: 300px;
+    // padding: 0 1rem;
+    margin: 1em;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 0.6rem;
+}
+
+.button{
+    margin: 1em;
+}
